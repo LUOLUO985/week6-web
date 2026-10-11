@@ -40,10 +40,6 @@ function drawPopulationChart(labels, values, areaName) {
     type: "line",
     height: 450,
     colors: ["#eb5146"],
-    lineOptions: {
-      hideDots: 1,
-      regionFill: 0,
-    },
   });
 }
 
@@ -162,4 +158,3 @@ async function init() {
 }
 
 init();
-
