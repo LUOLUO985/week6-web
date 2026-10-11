@@ -1,15 +1,15 @@
 body {
   margin: 0;
-  padding: 12px 8px;
+  padding: 8px 0;
   background: #f7f7f9;
   color: #222;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
 .page {
-  max-width: 1040px;
+  max-width: 1064px;
   margin: 0 auto;
-  padding: 20px 12px;
+  padding: 20px 8px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
@@ -63,8 +63,6 @@ a {
 }
 
 #chart {
-  width: 100%;
-  min-width: 960px;
-  max-width: 980px;
+  width: 984px;
   margin: 0 auto;
 }
