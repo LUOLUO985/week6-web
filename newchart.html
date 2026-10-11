@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Births and deaths in a Finnish municipality</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/frappe-charts@1.6.2/dist/frappe-charts.min.umd.js"></script>
+  </head>
+
+  <body>
+    <main class="page">
+      <h1>Births and deaths</h1>
+      <p class="intro">
+        Live births and deaths by year for the municipality that is selected on
+        the main page.
+      </p>
+
+      <p class="row">
+        <a id="navigation" href="/index.html">&laquo; Back to the population chart</a>
+      </p>
+
+      <div id="chart"></div>
+
+      <p id="status" class="status"></p>
+    </main>
+
+    <script src="api.js"></script>
+    <script src="newchart.js"></script>
+  </body>
+</html>

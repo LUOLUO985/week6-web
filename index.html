@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Population growth in a Finnish municipality</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/frappe-charts@1.6.2/dist/frappe-charts.min.umd.js"></script>
+  </head>
+
+  <body>
+    <main class="page">
+      <h1>Population growth in a Finnish municipality</h1>
+      <p class="intro">
+        The chart shows the population of the whole country (WHOLE COUNTRY) by
+        default. Type a municipality name and press Search to show that
+        municipality instead.
+      </p>
+
+      <form id="search-form" class="row">
+        <label for="input-area">Municipality:</label>
+        <input
+          type="text"
+          id="input-area"
+          placeholder="e.g. Helsinki"
+          autocomplete="off"
+        />
+        <button type="submit" id="submit-data">Search</button>
+      </form>
+
+      <div class="row">
+        <button type="button" id="add-data">Add prediction</button>
+      </div>
+
+      <p class="row">
+        <a id="navigation" href="/newchart.html">Births and deaths in this municipality &raquo;</a>
+      </p>
+
+      <div id="chart"></div>
+
+      <p id="status" class="status"></p>
+    </main>
+
+    <script src="api.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+
